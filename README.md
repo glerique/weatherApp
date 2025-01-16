@@ -29,7 +29,7 @@ A simple weather application that displays real-time weather information for pub
 ## Local Development Setup
 
 1. Prerequisites:
-```bash
+
 # Install Node.js and npm
 sudo apt update
 sudo apt install nodejs npm
