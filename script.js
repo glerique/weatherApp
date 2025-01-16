@@ -11,14 +11,16 @@ function loadWeatherData() {
         if (data.cod !== 200) {
           throw new Error("Ville non trouvée ou erreur dans la requête.");
         }
-
-        document.getElementById("city-name").textContent = data.name;
-        document.getElementById("weather-description").textContent = data.weather[0].description;
-        document.getElementById("temperature").textContent = data.main.temp.toFixed(1);
-
+        document.getElementById("city-name-text").textContent = data.name;
         const iconCode = data.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         document.getElementById("weather-icon").src = iconUrl;
+        document.getElementById("weather-description").textContent = data.weather[0].description;
+        document.getElementById("temperature").textContent = data.main.temp.toFixed(1);
+        document.getElementById("feels-like").textContent = data.main.feels_like.toFixed(1);
+        document.getElementById("humidity").textContent = data.main.humidity;
+
+
       })
       .catch((error) => {
         console.error("Erreur :", error);

@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interface Météo</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="weather-app">
-        <h2>Météo à <span id="city-name"></span></h2>
-        <div class="weather-info">
-            <div class="weather-details">
-                <img id="weather-icon" alt="Météo" width="100">
-                <p id="weather-description"></p>
-            </div>
-            <div class="temperature">
-                <p class="temp"><span id="temperature"></span>°C</p>
-            </div>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="weather-container">
+        <h1 class="app-title">WeatherApp</h1>
+        <img id="weather-icon" alt="Météo" width="100" />
+        <div class="temperature"><span id="temperature"></span>°C</div>
+        <div class="weather-description">
+          <span id="weather-description"></span>
         </div>
+        <div class="city-name">
+          <p id="city-name">
+            <svg class="location-icon" viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <span id="city-name-text"></span>
+          </p>
+        </div>
+        <div class="additional-info">
+          <p>Ressenti : <span id="feels-like"></span>°C</p>
+          <p>Humidité : <span id="humidity"></span>%</p>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
