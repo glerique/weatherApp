@@ -25,7 +25,3 @@ A simple weather application that displays real-time weather information for pub
     "city": "YourCity",
     "apiKey": "YourOpenWeatherMapAPIKey"
 }
-
-
-## Local Development Setup
-
