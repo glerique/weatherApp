@@ -28,7 +28,7 @@ A simple weather application that displays real-time weather information for pub
 
 # Running Fetch Locally
 
-To run this JavaScript code locally, you need to use **Python**.
+To run this JavaScript code locally, you need to use Python.
   
 1. Install Python from python.org.
 2. Start a simple HTTP server in the directory containing your file:
