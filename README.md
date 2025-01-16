@@ -26,14 +26,14 @@ A simple weather application that displays real-time weather information for pub
     "apiKey": "YourOpenWeatherMapAPIKey"
 }
 
-# Running Fetch Locally
+## Local Development Setup
 
-To run this JavaScript code locally, you need to use Python.
-  
-1. Install Python from python.org.
-2. Start a simple HTTP server in the directory containing your file:
-
+1. Prerequisites:
 ```bash
-python -m http.server
+# Install Node.js and npm
+sudo apt update
+sudo apt install nodejs npm
 
-Then, open http://localhost:8000/index.html in your browser to execute the code.
+# Verify installation
+node --version
+npm --version
