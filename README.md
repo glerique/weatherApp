@@ -25,16 +25,7 @@ A simple weather application that displays real-time weather information for pub
     "city": "YourCity",
     "apiKey": "YourOpenWeatherMapAPIKey"
 }
-```json
+
 
 ## Local Development Setup
 
-1. Prerequisites:
-
-# Install Node.js and npm
-sudo apt update
-sudo apt install nodejs npm
-
-# Verify installation
-node --version
-npm --version
