@@ -30,4 +30,4 @@ function loadWeatherData() {
 
   loadWeatherData();
 
-  setInterval(loadWeatherData, 60000);
+  setInterval(loadWeatherData, 3600000);
